@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2EC0A41C3C911B00A26651 /* PtvApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2EC0A31C3C911B00A26651 /* PtvApi.swift */; };
 		2F8B9CE01C3BCC6600F4797D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B9CDF1C3BCC6600F4797D /* AppDelegate.swift */; };
 		2F8B9CE21C3BCC6600F4797D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B9CE11C3BCC6600F4797D /* ViewController.swift */; };
 		2F8B9CE51C3BCC6600F4797D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8B9CE31C3BCC6600F4797D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		2F8B9CED1C3BCC6600F4797D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8B9CEB1C3BCC6600F4797D /* LaunchScreen.storyboard */; };
 		2F8B9CF81C3BCC6600F4797D /* PtvApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B9CF71C3BCC6600F4797D /* PtvApiTests.swift */; };
 		2F8B9D031C3BCC6600F4797D /* PtvApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B9D021C3BCC6600F4797D /* PtvApiUITests.swift */; };
+		D6012536CF1B68FF34EFB1FF /* Pods_PtvApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF804CFE18732BFCDF2D752 /* Pods_PtvApi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F2EC0A31C3C911B00A26651 /* PtvApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PtvApi.swift; sourceTree = "<group>"; };
 		2F8B9CDC1C3BCC6600F4797D /* PtvApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PtvApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8B9CDF1C3BCC6600F4797D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F8B9CE11C3BCC6600F4797D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		2F8B9CFE1C3BCC6600F4797D /* PtvApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PtvApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8B9D021C3BCC6600F4797D /* PtvApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PtvApiUITests.swift; sourceTree = "<group>"; };
 		2F8B9D041C3BCC6600F4797D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EF804CFE18732BFCDF2D752 /* Pods_PtvApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PtvApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F69009900685762D633363 /* Pods-PtvApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PtvApi.release.xcconfig"; path = "Pods/Target Support Files/Pods-PtvApi/Pods-PtvApi.release.xcconfig"; sourceTree = "<group>"; };
+		A942088BF04758992925096B /* Pods-PtvApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PtvApi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PtvApi/Pods-PtvApi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6012536CF1B68FF34EFB1FF /* Pods_PtvApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05388FAEF744E6F4A1495300 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A942088BF04758992925096B /* Pods-PtvApi.debug.xcconfig */,
+				77F69009900685762D633363 /* Pods-PtvApi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2F8B9CD31C3BCC6500F4797D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +99,8 @@
 				2F8B9CF61C3BCC6600F4797D /* PtvApiTests */,
 				2F8B9D011C3BCC6600F4797D /* PtvApiUITests */,
 				2F8B9CDD1C3BCC6600F4797D /* Products */,
+				05388FAEF744E6F4A1495300 /* Pods */,
+				47989C99B93A67ACC01F4ED9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +124,7 @@
 				2F8B9CEB1C3BCC6600F4797D /* LaunchScreen.storyboard */,
 				2F8B9CEE1C3BCC6600F4797D /* Info.plist */,
 				2F8B9CE61C3BCC6600F4797D /* PtvApi.xcdatamodeld */,
+				2F2EC0A31C3C911B00A26651 /* PtvApi.swift */,
 			);
 			path = PtvApi;
 			sourceTree = "<group>";
@@ -128,6 +147,14 @@
 			path = PtvApiUITests;
 			sourceTree = "<group>";
 		};
+		47989C99B93A67ACC01F4ED9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EF804CFE18732BFCDF2D752 /* Pods_PtvApi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F8B9D071C3BCC6600F4797D /* Build configuration list for PBXNativeTarget "PtvApi" */;
 			buildPhases = (
+				9362B56478C9813F0C6E56B4 /* Check Pods Manifest.lock */,
 				2F8B9CD81C3BCC6500F4797D /* Sources */,
 				2F8B9CD91C3BCC6500F4797D /* Frameworks */,
 				2F8B9CDA1C3BCC6500F4797D /* Resources */,
+				650F9390C9685C978C832369 /* Embed Pods Frameworks */,
+				2E7C6C9872917D7091E5923D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,6 +287,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E7C6C9872917D7091E5923D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PtvApi/Pods-PtvApi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		650F9390C9685C978C832369 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PtvApi/Pods-PtvApi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9362B56478C9813F0C6E56B4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F8B9CD81C3BCC6500F4797D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,6 +343,7 @@
 				2F8B9CE81C3BCC6600F4797D /* PtvApi.xcdatamodeld in Sources */,
 				2F8B9CE21C3BCC6600F4797D /* ViewController.swift in Sources */,
 				2F8B9CE01C3BCC6600F4797D /* AppDelegate.swift in Sources */,
+				2F2EC0A41C3C911B00A26651 /* PtvApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +481,7 @@
 		};
 		2F8B9D081C3BCC6600F4797D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A942088BF04758992925096B /* Pods-PtvApi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PtvApi/Info.plist;
@@ -413,6 +493,7 @@
 		};
 		2F8B9D091C3BCC6600F4797D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F69009900685762D633363 /* Pods-PtvApi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PtvApi/Info.plist;
@@ -489,6 +570,7 @@
 				2F8B9D091C3BCC6600F4797D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F8B9D0A1C3BCC6600F4797D /* Build configuration list for PBXNativeTarget "PtvApiTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +579,7 @@
 				2F8B9D0C1C3BCC6600F4797D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F8B9D0D1C3BCC6600F4797D /* Build configuration list for PBXNativeTarget "PtvApiUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +588,7 @@
 				2F8B9D0F1C3BCC6600F4797D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
