@@ -36,5 +36,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>timetableapi.ptv.vic.gov.au</key>
+            <dict>
+                <key>NSIncludesSubdomains</key><true/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key><true/>
+                <key>NSExceptionRequiresForwardSecrecy</key><false/>
+            </dict>
+        </dict>
+    </dict>
 </dict>
 </plist>

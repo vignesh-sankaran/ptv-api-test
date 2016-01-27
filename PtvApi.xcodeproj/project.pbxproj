@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2477331867F9901BAC6F3C65 /* Pods_PtvApiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC90B423D969E6E4C5764E22 /* Pods_PtvApiUITests.framework */; };
 		2F2EC0A41C3C911B00A26651 /* PtvApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2EC0A31C3C911B00A26651 /* PtvApi.swift */; };
 		2F8B9CE01C3BCC6600F4797D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B9CDF1C3BCC6600F4797D /* AppDelegate.swift */; };
 		2F8B9CE21C3BCC6600F4797D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B9CE11C3BCC6600F4797D /* ViewController.swift */; };
@@ -16,7 +17,9 @@
 		2F8B9CED1C3BCC6600F4797D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8B9CEB1C3BCC6600F4797D /* LaunchScreen.storyboard */; };
 		2F8B9CF81C3BCC6600F4797D /* PtvApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B9CF71C3BCC6600F4797D /* PtvApiTests.swift */; };
 		2F8B9D031C3BCC6600F4797D /* PtvApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B9D021C3BCC6600F4797D /* PtvApiUITests.swift */; };
-		D6012536CF1B68FF34EFB1FF /* Pods_PtvApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF804CFE18732BFCDF2D752 /* Pods_PtvApi.framework */; };
+		2FA01A891C58D793001315D2 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FA01A881C58D793001315D2 /* ApiKeys.plist */; };
+		40EB1BA95A3E87FED57ED77F /* Pods_PtvApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1101DCCCC8AE3DB59DBCF298 /* Pods_PtvApiTests.framework */; };
+		63E934A0037574D0DB1AEDDA /* Pods_PtvApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F94D37AFFFD8F4D135867F /* Pods_PtvApi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01CABFD79E662E7048382113 /* Pods-PtvApiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PtvApiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PtvApiTests/Pods-PtvApiTests.release.xcconfig"; sourceTree = "<group>"; };
+		1101DCCCC8AE3DB59DBCF298 /* Pods_PtvApiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PtvApiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F2EC0A31C3C911B00A26651 /* PtvApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PtvApi.swift; sourceTree = "<group>"; };
 		2F8B9CDC1C3BCC6600F4797D /* PtvApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PtvApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8B9CDF1C3BCC6600F4797D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,9 +57,15 @@
 		2F8B9CFE1C3BCC6600F4797D /* PtvApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PtvApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8B9D021C3BCC6600F4797D /* PtvApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PtvApiUITests.swift; sourceTree = "<group>"; };
 		2F8B9D041C3BCC6600F4797D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EF804CFE18732BFCDF2D752 /* Pods_PtvApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PtvApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77F69009900685762D633363 /* Pods-PtvApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PtvApi.release.xcconfig"; path = "Pods/Target Support Files/Pods-PtvApi/Pods-PtvApi.release.xcconfig"; sourceTree = "<group>"; };
-		A942088BF04758992925096B /* Pods-PtvApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PtvApi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PtvApi/Pods-PtvApi.debug.xcconfig"; sourceTree = "<group>"; };
+		2FA01A881C58D793001315D2 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		2FA6E8301C55B03C00BDA7FD /* PtvApi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PtvApi-Bridging-Header.h"; sourceTree = "<group>"; };
+		6012E1136C185F7AD46E0227 /* Pods-PtvApiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PtvApiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PtvApiUITests/Pods-PtvApiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		66F94D37AFFFD8F4D135867F /* Pods_PtvApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PtvApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B046DD9F0C18215A40C7F0F /* Pods-PtvApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PtvApi.release.xcconfig"; path = "Pods/Target Support Files/Pods-PtvApi/Pods-PtvApi.release.xcconfig"; sourceTree = "<group>"; };
+		8EA90749FB2D4E472EDE6B96 /* Pods-PtvApiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PtvApiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PtvApiTests/Pods-PtvApiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC90B423D969E6E4C5764E22 /* Pods_PtvApiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PtvApiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB42F514BAEFF1224D5B41EB /* Pods-PtvApiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PtvApiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PtvApiUITests/Pods-PtvApiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA7EB7AB848F7737D99C28A2 /* Pods-PtvApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PtvApi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PtvApi/Pods-PtvApi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6012536CF1B68FF34EFB1FF /* Pods_PtvApi.framework in Frameworks */,
+				63E934A0037574D0DB1AEDDA /* Pods_PtvApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40EB1BA95A3E87FED57ED77F /* Pods_PtvApiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,21 +89,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2477331867F9901BAC6F3C65 /* Pods_PtvApiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05388FAEF744E6F4A1495300 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A942088BF04758992925096B /* Pods-PtvApi.debug.xcconfig */,
-				77F69009900685762D633363 /* Pods-PtvApi.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		2F8B9CD31C3BCC6500F4797D = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +103,8 @@
 				2F8B9CF61C3BCC6600F4797D /* PtvApiTests */,
 				2F8B9D011C3BCC6600F4797D /* PtvApiUITests */,
 				2F8B9CDD1C3BCC6600F4797D /* Products */,
-				05388FAEF744E6F4A1495300 /* Pods */,
-				47989C99B93A67ACC01F4ED9 /* Frameworks */,
+				FDEA272F9BD0A3139057BB6E /* Pods */,
+				F24D005F184A079C4244D2F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +129,8 @@
 				2F8B9CEE1C3BCC6600F4797D /* Info.plist */,
 				2F8B9CE61C3BCC6600F4797D /* PtvApi.xcdatamodeld */,
 				2F2EC0A31C3C911B00A26651 /* PtvApi.swift */,
+				2FA6E8301C55B03C00BDA7FD /* PtvApi-Bridging-Header.h */,
+				2FA01A881C58D793001315D2 /* ApiKeys.plist */,
 			);
 			path = PtvApi;
 			sourceTree = "<group>";
@@ -147,12 +153,27 @@
 			path = PtvApiUITests;
 			sourceTree = "<group>";
 		};
-		47989C99B93A67ACC01F4ED9 /* Frameworks */ = {
+		F24D005F184A079C4244D2F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4EF804CFE18732BFCDF2D752 /* Pods_PtvApi.framework */,
+				66F94D37AFFFD8F4D135867F /* Pods_PtvApi.framework */,
+				1101DCCCC8AE3DB59DBCF298 /* Pods_PtvApiTests.framework */,
+				BC90B423D969E6E4C5764E22 /* Pods_PtvApiUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDEA272F9BD0A3139057BB6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA7EB7AB848F7737D99C28A2 /* Pods-PtvApi.debug.xcconfig */,
+				6B046DD9F0C18215A40C7F0F /* Pods-PtvApi.release.xcconfig */,
+				8EA90749FB2D4E472EDE6B96 /* Pods-PtvApiTests.debug.xcconfig */,
+				01CABFD79E662E7048382113 /* Pods-PtvApiTests.release.xcconfig */,
+				EB42F514BAEFF1224D5B41EB /* Pods-PtvApiUITests.debug.xcconfig */,
+				6012E1136C185F7AD46E0227 /* Pods-PtvApiUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,12 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F8B9D071C3BCC6600F4797D /* Build configuration list for PBXNativeTarget "PtvApi" */;
 			buildPhases = (
-				9362B56478C9813F0C6E56B4 /* Check Pods Manifest.lock */,
+				D4113167E3681F19CBB5F1EA /* Check Pods Manifest.lock */,
 				2F8B9CD81C3BCC6500F4797D /* Sources */,
 				2F8B9CD91C3BCC6500F4797D /* Frameworks */,
 				2F8B9CDA1C3BCC6500F4797D /* Resources */,
-				650F9390C9685C978C832369 /* Embed Pods Frameworks */,
-				2E7C6C9872917D7091E5923D /* Copy Pods Resources */,
+				75F9EFFDB3320EB3BC9C44FE /* Embed Pods Frameworks */,
+				6D3D18300EEB06E82CE83081 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F8B9D0A1C3BCC6600F4797D /* Build configuration list for PBXNativeTarget "PtvApiTests" */;
 			buildPhases = (
+				891ACC008336CDA3CB326877 /* Check Pods Manifest.lock */,
 				2F8B9CEF1C3BCC6600F4797D /* Sources */,
 				2F8B9CF01C3BCC6600F4797D /* Frameworks */,
 				2F8B9CF11C3BCC6600F4797D /* Resources */,
+				9679DF365565ED403C5438B4 /* Embed Pods Frameworks */,
+				64CAC1F87C4483E6FC36CA0B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F8B9D0D1C3BCC6600F4797D /* Build configuration list for PBXNativeTarget "PtvApiUITests" */;
 			buildPhases = (
+				E75CDBD36FFD043A8D8CBDEA /* Check Pods Manifest.lock */,
 				2F8B9CFA1C3BCC6600F4797D /* Sources */,
 				2F8B9CFB1C3BCC6600F4797D /* Frameworks */,
 				2F8B9CFC1C3BCC6600F4797D /* Resources */,
+				709B1F4003F3E9C9BF1FCE90 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F8B9CED1C3BCC6600F4797D /* LaunchScreen.storyboard in Resources */,
+				2FA01A891C58D793001315D2 /* ApiKeys.plist in Resources */,
 				2F8B9CEA1C3BCC6600F4797D /* Assets.xcassets in Resources */,
 				2F8B9CE51C3BCC6600F4797D /* Main.storyboard in Resources */,
 			);
@@ -288,7 +315,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2E7C6C9872917D7091E5923D /* Copy Pods Resources */ = {
+		64CAC1F87C4483E6FC36CA0B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PtvApiTests/Pods-PtvApiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D3D18300EEB06E82CE83081 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -303,7 +345,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PtvApi/Pods-PtvApi-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		650F9390C9685C978C832369 /* Embed Pods Frameworks */ = {
+		709B1F4003F3E9C9BF1FCE90 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PtvApiUITests/Pods-PtvApiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75F9EFFDB3320EB3BC9C44FE /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,7 +375,52 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PtvApi/Pods-PtvApi-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9362B56478C9813F0C6E56B4 /* Check Pods Manifest.lock */ = {
+		891ACC008336CDA3CB326877 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9679DF365565ED403C5438B4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PtvApiTests/Pods-PtvApiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4113167E3681F19CBB5F1EA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E75CDBD36FFD043A8D8CBDEA /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -481,30 +583,36 @@
 		};
 		2F8B9D081C3BCC6600F4797D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A942088BF04758992925096B /* Pods-PtvApi.debug.xcconfig */;
+			baseConfigurationReference = FA7EB7AB848F7737D99C28A2 /* Pods-PtvApi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PtvApi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vignesh.PtvApi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PtvApi/PtvApi-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		2F8B9D091C3BCC6600F4797D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77F69009900685762D633363 /* Pods-PtvApi.release.xcconfig */;
+			baseConfigurationReference = 6B046DD9F0C18215A40C7F0F /* Pods-PtvApi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PtvApi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vignesh.PtvApi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PtvApi/PtvApi-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		2F8B9D0B1C3BCC6600F4797D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EA90749FB2D4E472EDE6B96 /* Pods-PtvApiTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PtvApiTests/Info.plist;
@@ -517,6 +625,7 @@
 		};
 		2F8B9D0C1C3BCC6600F4797D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01CABFD79E662E7048382113 /* Pods-PtvApiTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PtvApiTests/Info.plist;
@@ -529,6 +638,7 @@
 		};
 		2F8B9D0E1C3BCC6600F4797D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB42F514BAEFF1224D5B41EB /* Pods-PtvApiUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PtvApiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -541,6 +651,7 @@
 		};
 		2F8B9D0F1C3BCC6600F4797D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6012E1136C185F7AD46E0227 /* Pods-PtvApiUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PtvApiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
