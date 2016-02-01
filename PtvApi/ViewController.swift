@@ -22,7 +22,11 @@ class ViewController: UIViewController {
         
         self.view.addSubview(loadingText)
         
-        healthCheck()
+        healthCheck({ (apiResponse) -> Void in
+            debugPrint(apiResponse.result)
+            loadingText.text = "API Connection successful!"
+        })
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

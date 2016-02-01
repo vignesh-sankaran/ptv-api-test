@@ -53,8 +53,7 @@ private func createHmacSignature(callUrl: String) -> String
     return hash as String
 }
 
-
-func healthCheck() -> Bool
+func healthCheck(callback: (apiResponse: Response<AnyObject, NSError>) -> Void) -> Void
 {
     
     let healthCheckUrl : String = "/v2/healthcheck?timestamp=" + NSDate().formattedISO8601 + "&devid=" + devId
@@ -64,8 +63,6 @@ func healthCheck() -> Bool
     Alamofire.request(.GET, requestUrl).responseJSON
     {
         response in
-            debugPrint(response.result)
+            callback(apiResponse: response)
     }
-    
-    return true
 }
