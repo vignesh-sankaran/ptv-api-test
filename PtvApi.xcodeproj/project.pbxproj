@@ -18,6 +18,7 @@
 		2F8B9CF81C3BCC6600F4797D /* PtvApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B9CF71C3BCC6600F4797D /* PtvApiTests.swift */; };
 		2F8B9D031C3BCC6600F4797D /* PtvApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B9D021C3BCC6600F4797D /* PtvApiUITests.swift */; };
 		2F8C09F71C59D6FD00FFA883 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F8C09F61C59D6FD00FFA883 /* ApiKeys.plist */; };
+		2F8C09F91C61748300FFA883 /* PtvHealthCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C09F81C61748300FFA883 /* PtvHealthCheck.swift */; };
 		40EB1BA95A3E87FED57ED77F /* Pods_PtvApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1101DCCCC8AE3DB59DBCF298 /* Pods_PtvApiTests.framework */; };
 		63E934A0037574D0DB1AEDDA /* Pods_PtvApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F94D37AFFFD8F4D135867F /* Pods_PtvApi.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		2F8B9D021C3BCC6600F4797D /* PtvApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PtvApiUITests.swift; sourceTree = "<group>"; };
 		2F8B9D041C3BCC6600F4797D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F8C09F61C59D6FD00FFA883 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		2F8C09F81C61748300FFA883 /* PtvHealthCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PtvHealthCheck.swift; sourceTree = "<group>"; };
 		2FA6E8301C55B03C00BDA7FD /* PtvApi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PtvApi-Bridging-Header.h"; sourceTree = "<group>"; };
 		6012E1136C185F7AD46E0227 /* Pods-PtvApiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PtvApiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PtvApiUITests/Pods-PtvApiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		66F94D37AFFFD8F4D135867F /* Pods_PtvApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PtvApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 				2F2EC0A31C3C911B00A26651 /* PtvApi.swift */,
 				2FA6E8301C55B03C00BDA7FD /* PtvApi-Bridging-Header.h */,
 				2F8C09F61C59D6FD00FFA883 /* ApiKeys.plist */,
+				2F8C09F81C61748300FFA883 /* PtvHealthCheck.swift */,
 			);
 			path = PtvApi;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F8B9CE81C3BCC6600F4797D /* PtvApi.xcdatamodeld in Sources */,
+				2F8C09F91C61748300FFA883 /* PtvHealthCheck.swift in Sources */,
 				2F8B9CE21C3BCC6600F4797D /* ViewController.swift in Sources */,
 				2F8B9CE01C3BCC6600F4797D /* AppDelegate.swift in Sources */,
 				2F2EC0A41C3C911B00A26651 /* PtvApi.swift in Sources */,

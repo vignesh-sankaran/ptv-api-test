@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Foundation
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -23,8 +25,20 @@ class ViewController: UIViewController {
         self.view.addSubview(loadingText)
         
         healthCheck({ (apiResponse) -> Void in
-            debugPrint(apiResponse.result)
-            loadingText.text = "API Connection successful!"
+//            debugPrint(apiResponse.result)
+//            debugPrint(apiResponse.result.value)
+
+//            debugPrint(apiResponse.result.value)
+            
+            let json = JSON.parse(apiResponse.result.description)
+            
+            
+            debugPrint(apiResponse.result.debugDescription)
+            
+//            debugPrint(apiResponse.description)
+            
+            
+            loadingText.text = apiResponse.result.description
         })
         
         // Do any additional setup after loading the view, typically from a nib.
