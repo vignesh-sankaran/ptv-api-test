@@ -4,6 +4,7 @@ use_frameworks!
 
 target 'PtvApi' do
 	pod 'Alamofire', '~> 3.0'
+	pod 'SwiftyJSON' , :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 end
 
 target 'PtvApiTests' do
