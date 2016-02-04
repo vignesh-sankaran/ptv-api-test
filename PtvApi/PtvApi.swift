@@ -53,19 +53,18 @@ private func createHmacSignature(callUrl: String) -> String
     return hash as String
 }
 
-func newHealthCheck() -> Void
+func newHealthCheck(callback: (apiData: NSData?) -> Void) -> Void
 {
-    var request: NSMutableURLRequest = NSMutableURLRequest()
     let healthCheckUrl : String = "/v2/healthcheck?timestamp=" + NSDate().formattedISO8601 + "&devid=" + devId
     let hmacSignature : String = createHmacSignature(healthCheckUrl)
     let requestUrl : String = baseUrl + healthCheckUrl + "&signature=" + hmacSignature
     
-    request.URL = NSURL(string: requestUrl)
-    request.HTTPMethod = "GET"
+    NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: requestUrl)!) {
+        data, response, error in
+            callback(apiData: data)
+    }.resume()
     
-    NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue(), completionHandler: { (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
-        let json = data
-    })
+    
     
 }
 

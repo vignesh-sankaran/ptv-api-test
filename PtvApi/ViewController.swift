@@ -24,21 +24,9 @@ class ViewController: UIViewController {
         
         self.view.addSubview(loadingText)
         
-        healthCheck({ (apiResponse) -> Void in
-//            debugPrint(apiResponse.result)
-//            debugPrint(apiResponse.result.value)
-
-//            debugPrint(apiResponse.result.value)
-            
-            let json = JSON.parse(apiResponse.result.description)
-            
-            
-            debugPrint(apiResponse.result.debugDescription)
-            
-//            debugPrint(apiResponse.description)
-            
-            
-            loadingText.text = apiResponse.result.description
+        newHealthCheck({ (apiData) -> Void in
+            loadingText.text = "Random text shown here"
+            print(NSString(data: apiData!, encoding: NSUTF8StringEncoding))
         })
         
         // Do any additional setup after loading the view, typically from a nib.
