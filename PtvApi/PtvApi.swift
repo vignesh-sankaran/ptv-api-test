@@ -75,10 +75,7 @@ class PtvApi: NSObject, NSURLSessionDelegate, NSURLSessionTaskDelegate
                 {
                     debugPrint(error)
                 }
-                else
-                {
 
-                }
                 callback(apiData: data)
         }
         task.resume()
