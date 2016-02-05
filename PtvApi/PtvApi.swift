@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import Alamofire
 
 extension NSDate {
     struct Date {
@@ -59,15 +58,29 @@ class PtvApi: NSObject, NSURLSessionDelegate, NSURLSessionTaskDelegate
         return hash as String
     }
     
-    func newHealthCheck(callback: (apiData: NSData?) -> Void) -> Void
+    func healthCheck(callback: (apiData: NSData?) -> Void) -> Void
     {
         let healthCheckUrl : String = "/v2/healthcheck?timestamp=" + NSDate().formattedISO8601 + "&devid=" + constants.devId
         let hmacSignature : String = createHmacSignature(healthCheckUrl)
         let requestUrl : String = constants.baseUrl + healthCheckUrl + "&signature=" + hmacSignature
         
-        var configuration: NSURLSessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration()
-        var apiRequestSession: NSURLSession = NSURLSession(configuration: configuration, delegate: self, delegateQueue: NSOperationQueue.mainQueue())
+        let configuration: NSURLSessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let apiRequestSession: NSURLSession = NSURLSession(configuration: configuration, delegate: self, delegateQueue: NSOperationQueue.mainQueue())
+        let request: NSMutableURLRequest = NSMutableURLRequest(URL: NSURL(string: requestUrl)!)
         
         
+        let task = apiRequestSession.dataTaskWithRequest(request) {
+            (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+                if error != nil
+                {
+                    debugPrint(error)
+                }
+                else
+                {
+
+                }
+                callback(apiData: data)
+        }
+        task.resume()
     }
 }
