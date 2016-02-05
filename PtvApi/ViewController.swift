@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         
         self.view.addSubview(loadingText)
         
-        newHealthCheck({ (apiData) -> Void in
+        PtvApi().newHealthCheck({ (apiData) -> Void in
             loadingText.text = "Random text shown here"
             print(NSString(data: apiData!, encoding: NSUTF8StringEncoding))
         })
