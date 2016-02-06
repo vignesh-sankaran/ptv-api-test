@@ -18,11 +18,8 @@ class ViewController: UIViewController {
         let mainView = UIView(frame: CGRectMake(0,0, 1000, 750))
         self.view.addSubview(mainView)
         
-        let mainTitle = UILabel(frame: CGRectMake(50, 50, 200, 100))
-        mainTitle.text = "Connecting to PTV API..."
-        mainTitle.font = UIFont.systemFontOfSize(16)
-        mainTitle.textColor = UIColor.blackColor()
-        
+        var mainTitle = UILabel(frame: CGRectMake(50, 50, 200, 100))
+        MainScreenHelper().setMainTitleText(&mainTitle)
         mainView.addSubview(mainTitle)
         
         PtvApi().healthCheck({ (apiResponse, apiData) -> Void in
@@ -31,16 +28,15 @@ class ViewController: UIViewController {
             
             let apiDataJson = JSON(data: apiData!)
             
+            mainView.addSubview(MainScreenHelper().arrangeHealthCheckCriteriaHeadings(apiDataJson))
+            
             let healthCheckCriteria: NSMutableArray = NSMutableArray()
             
             for (apiCheck, _) in apiDataJson
             {
-                healthCheckCriteria.addObject(apiCheck)
+                healthCheckCriteria.addObject(apiCheck as String)
             }
-            
-            let healthCheckTitle = UILabel(frame: CGRectMake(50, 75, 200, 100))
-            healthCheckTitle.text = "Healthcheck results: "
-            mainView.addSubview(healthCheckTitle)
+
             
             let healthCheckOverallResultLabel = UILabel(frame: CGRectMake(220, 75,100, 100))
             healthCheckOverallResultLabel.font = UIFont.boldSystemFontOfSize(16)
