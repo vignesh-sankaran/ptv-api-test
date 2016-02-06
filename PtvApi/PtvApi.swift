@@ -58,7 +58,7 @@ class PtvApi: NSObject, NSURLSessionDelegate, NSURLSessionTaskDelegate
         return hash as String
     }
     
-    func healthCheck(callback: (apiData: NSData?) -> Void) -> Void
+    func healthCheck(callback: (apiResponse: NSURLResponse?, apiData: NSData?) -> Void) -> Void
     {
         let healthCheckUrl : String = "/v2/healthcheck?timestamp=" + NSDate().formattedISO8601 + "&devid=" + constants.devId
         let hmacSignature : String = createHmacSignature(healthCheckUrl)
@@ -76,7 +76,7 @@ class PtvApi: NSObject, NSURLSessionDelegate, NSURLSessionTaskDelegate
                     debugPrint(error)
                 }
 
-                callback(apiData: data)
+                callback(apiResponse: response, apiData: data)
         }
         task.resume()
     }
