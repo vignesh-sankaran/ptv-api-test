@@ -19,15 +19,16 @@ class ViewController: UIViewController {
         self.view.addSubview(mainView)
         
         let mainTitle = UILabel(frame: CGRectMake(50, 50, 200, 100))
+        mainTitle.font = UIFont.systemFontOfSize(16)
+        
         MainScreenHelper().setMainTitleText(mainTitle)
         mainView.addSubview(mainTitle)
         
         PtvApi().healthCheck({ (apiResponse, apiData) -> Void in
-
-            mainTitle.text = "API Connection: "
             
             let apiDataJson = JSON(data: apiData!)
             
+            mainView.addSubview(MainScreenHelper().arrangeApiConnectionStatusRow(mainTitle, apiResponse: apiResponse!))
             mainView.addSubview(MainScreenHelper().arrangeOverallHealthCheckResultHeading())
             mainView.addSubview(MainScreenHelper().arrangeOverallHealthCheckResult(apiDataJson))
             MainScreenHelper().insertHealthCheckResults(apiDataJson, mainView: mainView)

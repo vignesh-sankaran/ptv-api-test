@@ -24,6 +24,28 @@ class MainScreenHelper
         return healthCheckCriteria
     }
     
+    func arrangeApiConnectionStatusRow(mainTitle: UILabel, apiResponse: NSURLResponse) -> UILabel
+    {
+        mainTitle.text = "PTV API Connection:"
+        
+        let apiHttpResponse: NSHTTPURLResponse! = apiResponse as! NSHTTPURLResponse
+        let apiConnectionStatus: UILabel = UILabel(frame: CGRectMake(220, 50, 200, 100))
+        apiConnectionStatus.font = UIFont.boldSystemFontOfSize(16)
+        
+        if apiHttpResponse.statusCode == 200
+        {
+            apiConnectionStatus.text = "PASS"
+            apiConnectionStatus.textColor = UIColor.greenColor()
+        }
+        else
+        {
+            apiConnectionStatus.text = "FAIL"
+            apiConnectionStatus.textColor = UIColor.redColor()
+        }
+        
+        return apiConnectionStatus
+    }
+    
     func setMainTitleText(mainTitle: UILabel) -> Void
     {
         mainTitle.text = "Connecting to PTV API..."
