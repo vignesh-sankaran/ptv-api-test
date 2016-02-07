@@ -29,14 +29,6 @@ class ViewController: UIViewController {
             let apiDataJson = JSON(data: apiData!)
             
             mainView.addSubview(MainScreenHelper().arrangeOverallHealthCheckResultHeading())
-            
-            let healthCheckCriteria: NSMutableArray = NSMutableArray()
-            
-            for (apiCheck, _) in apiDataJson
-            {
-                healthCheckCriteria.addObject(apiCheck as String)
-            }
-            
             mainView.addSubview(MainScreenHelper().arrangeOverallHealthCheckResult(apiDataJson))
             MainScreenHelper().insertHealthCheckResults(apiDataJson, mainView: mainView)
             
