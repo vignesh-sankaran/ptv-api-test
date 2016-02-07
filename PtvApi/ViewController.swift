@@ -31,7 +31,6 @@ class ViewController: UIViewController {
             mainView.addSubview(MainScreenHelper().arrangeOverallHealthCheckResultHeading())
             mainView.addSubview(MainScreenHelper().arrangeOverallHealthCheckResult(apiDataJson))
             MainScreenHelper().insertHealthCheckResults(apiDataJson, mainView: mainView)
-            
         })
         
         // Do any additional setup after loading the view, typically from a nib.
