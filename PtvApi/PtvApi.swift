@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// The below ISO8601 date stamp extension is attributed to Leo Dabus. Retrieved from http://stackoverflow.com/a/28016692/5891072
 extension NSDate {
     struct Date {
         static let formatterISO8601: NSDateFormatter = {
@@ -38,6 +39,7 @@ class PtvApi: NSObject, NSURLSessionDelegate, NSURLSessionTaskDelegate
 
     private func createHmacSignature(callUrl: String) -> String
     {
+        // The code to create the HMAC signature is attributed to Airspeed Velocity. Retrieved from http://stackoverflow.com/a/29799802/5891072
         let unencodedKey : String = constants.keys["SecurityKey"] as! String
         
         let encodedKey = unencodedKey.cStringUsingEncoding(NSUTF8StringEncoding)
